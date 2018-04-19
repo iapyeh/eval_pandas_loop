@@ -1,6 +1,9 @@
 資料清理使用Pasdas與一般file loop的效能比較
 
+.. _h572187820253c7294643631303029:
+
 檔案說明：
+==========
 
 * by_pandas.py ，改寫自參考資料內的Python程式。原程式從網路下載資料，改寫為從本地檔案系統讀取待清理資料。並將dataframe輸出為tsv格式。(python3)
 
@@ -10,7 +13,11 @@
 
 * enlarge.py，將原始樣本放大的程式(python2)
 
+.. _h572187820253c7294643631303029:
+
 操作方式：
+==========
+
 
 .. code:: 
 
@@ -27,11 +34,21 @@
     # 如果要產生其他倍數，請修改程式內的 n 
     $ python2 enlarge.py
 
+.. _hd1b83d48586e1b393a624e28544946:
+
 結果：
+======
 
 \ |IMG1|\ 
 
+執行 by_pandas.py 時記憶體的最高用量達 670MB，by_loopy.py則在270MB左右。
+
+\ |IMG2|\ 
+
+.. _h572187820253c7294643631303029:
+
 參考資料：
+==========
 
 一、\ |LINK1|\ 
 
@@ -47,3 +64,7 @@
 .. |IMG1| image:: static/index_1.png
    :height: 281 px
    :width: 602 px
+
+.. |IMG2| image:: static/index_2.png
+   :height: 122 px
+   :width: 697 px
